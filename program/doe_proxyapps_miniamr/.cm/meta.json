@@ -1,0 +1,67 @@
+{
+  "backup_data_uid": "9f514e1453b9e485", 
+  "build_compiler_vars": {}, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "doe_proxyapps_miniamr", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ --nx 8 --ny 8 --nz 8 --num_tsteps 100 ", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "block.c",
+    "check_sum.c",
+    "comm.c",
+    "driver.c",
+    "glibc_compat_rand.c",
+    "init.c",
+    "main.c",
+    "move.c",
+    "plot.c",
+    "profile.c",
+    "refine.c",
+    "stencil.c",
+    "target.c",
+    "util.c"
+  ], 
+  "tags": [
+    "program", 
+    "doe_proxyapps",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
