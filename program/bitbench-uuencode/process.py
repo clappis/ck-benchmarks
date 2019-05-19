@@ -30,28 +30,28 @@ def ck_check_output(i):
     ck=i['ck_kernel']
 
     env=i.get('env',{})
-    dict1={}
+    bin1=None
 
     file1=i.get('file1','')
     if file1!='':
-       r=ck.load_json_file({'json_file':file1})
+       r=ck.load_text_file({'text_file':file1})
        if r['return']>0: return r
-       dict1=r['dict']
+       bin1=r['bin']
 
-    if dict1 is None:
+    if bin1 is None:
        return {'return':1, 'error':'dict1 to compare is empty'}
 
-    dict2={}
+    bin2=None
     file2=i.get('file2','')
     if file2!='':
-       r=ck.load_json_file({'json_file':file2})
+       r=ck.load_text_file({'text_file':file2})
        if r['return']>0: return r
-       dict2=r['dict']
+       bin2=r['bin']
 
-    if dict2 is None:
+    if bin2 is None:
        return {'return':1, 'error':'dict2 to compare is empty'}
 
-    if dict1 <> dict2:
+    if bin1 <> bin2:
        return {'return':0, 'failed':True, 'fail_reason':'Numerical outputs differ:\n'+err}
 
     return {'return':0, 'failed':False}
