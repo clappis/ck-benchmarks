@@ -1,5 +1,5 @@
 {
-  "backup_data_uid": "856da9f4458b2dd9", 
+  "backup_data_uid": "fd7b4b499e8ebda6", 
   "build_compiler_vars": {}, 
   "compile_deps": {
     "compiler": {
@@ -9,7 +9,7 @@
     }
   }, 
   "compiler_env": "CK_CC", 
-  "data_name": "coyote-lp", 
+  "data_name": "dhrystone-fldry", 
   "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
   "main_language": "c", 
   "print_files_after_run": [
@@ -43,11 +43,11 @@
   "run_vars": {
   }, 
   "source_files": [
-    "lpbench.c"
+    "fldry.c"
   ], 
   "tags": [
     "program", 
-    "coyote",
+    "dhrystone",
     "lang-c"
   ], 
   "target_file": "a"
