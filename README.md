@@ -2,6 +2,8 @@
 
 This project has a dependency to [CK Project](https://github.com/ctuning/ck). The previous CK's installation is expected to run this module.
 
+The programs that were used, were extracted from the [Benchmarks repository](https://github.com/guilhermeleobas/Benchmarks/). Feel free to add more programs by doing a pull request.
+
 Usage
 =============
 #### Pull the repository into CK as follow:
