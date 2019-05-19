@@ -1,0 +1,60 @@
+{
+  "backup_data_uid": "5b77577b471d98d3", 
+  "build_compiler_vars": {}, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "doe_proxyapps_rsbench", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ -s small -l 100000 -p 1000 -w 1000", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "glibc_compat_rand.c",
+    "init.c",
+    "io.c",
+    "main.c",
+    "material.c",
+    "utils.c",
+    "xs_kernel.c"
+  ], 
+  "tags": [
+    "program", 
+    "doe_proxyapps",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
