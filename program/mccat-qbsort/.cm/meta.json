@@ -1,5 +1,5 @@
 {
-  "backup_data_uid": "fc0f900ff4934808", 
+  "backup_data_uid": "96904983a813a86c", 
   "build_compiler_vars": {}, 
   "compile_deps": {
     "compiler": {
@@ -9,7 +9,7 @@
     }
   }, 
   "compiler_env": "CK_CC", 
-  "data_name": "mccat_qbsort", 
+  "data_name": "mccat-qbsort", 
   "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
   "main_language": "c", 
   "print_files_after_run": [
