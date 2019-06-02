@@ -1,0 +1,54 @@
+{
+  "backup_data_uid": "04a23943d7740c50", 
+  "build_compiler_vars": {
+    "NeedFunctionPrototypes" : 1,
+    "SASR" : ""
+  }, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "mediabench-gsm-toast", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ -c \"$#src_path#$clinton.pcm\"", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "add.c", "code.c", "debug.c", "decode.c", "gsm_create.c", 
+  "gsm_decode.c", "gsm_destroy.c", "gsm_encode.c", "gsm_explode.c", 
+  "gsm_implode.c", "gsm_option.c", "gsm_print.c", "long_term.c", "lpc.c", 
+  "preprocess.c", "rpe.c", "short_term.c", "table.c", "toast.c", 
+  "toast_alaw.c", "toast_audio.c", "toast_lin.c", "toast_ulaw.c"
+  ], 
+  "tags": [
+    "program", 
+    "mediabench",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
