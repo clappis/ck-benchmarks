@@ -1,0 +1,80 @@
+{
+  "backup_data_uid": "881946ff90b12a23", 
+  "build_compiler_vars": {}, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "mafft", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ -b 62 -g 0.100 -f 2.00 -h 0.100 -L < \"$#src_path#$pyruvate_decarboxylase.fasta\"", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "Calignm1.c ",
+    "constants.c ",
+    "defs.c ",
+    "Falign.c ",
+    "fft.c ",
+    "fftFunctions.c ",
+    "Galign11.c ",
+    "genalign11.c ",
+    "genGalign11.c ",
+    "Halignmm.c",
+    "io.c",
+    "Lalign11.c ",
+    "Lalignmm.c ",
+    "mltaln9.c",
+    "MSalign11.c",
+    "MSalignmm.c",
+    "mtxutl.c",
+    "pairlocalalign.c",
+    "partQalignmm.c",
+    "partSalignmm.c",
+    "Qalignmm.c",
+    "Ralignmm.c",
+    "rna.c",
+    "SAalignmm.c",
+    "Salignmm.c",
+    "suboptalign11.c",
+    "tddis.c"
+  ], 
+  "tags": [
+    "program", 
+    "mafft",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
