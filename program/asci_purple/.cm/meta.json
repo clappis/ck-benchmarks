@@ -1,0 +1,69 @@
+{
+  "backup_data_uid": "3dd00c694cc19145", 
+  "build_compiler_vars": {
+    "POSIX_SOURCE" : "1",
+    "HYPRE_TIMING" : "1",
+    "HYPRE_SEQUENTIAL" : "1"
+
+  }, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "asci_purple", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ -n 100 40 100 -c 0.1 1.0 10.0", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "HYPRE_pcg.c", "HYPRE_struct_grid.c", "HYPRE_struct_matrix.c", "HYPRE_struct_pcg.c",
+               "HYPRE_struct_smg.c", "HYPRE_struct_stencil.c", "HYPRE_struct_vector.c", "box.c",
+               "box_algebra.c", "box_alloc.c", "box_neighbors.c", "coarsen.c", "communication.c",
+               "communication_info.c", "computation.c", "cyclic_reduction.c", "general.c", "grow.c",
+               "memory.c", "mpistubs.c", "pcg.c", "pcg_struct.c", "point_relax.c", "project.c",
+               "random.c", "semi_interp.c", "semi_restrict.c", "smg.c", "smg2000.c", "smg2_setup_rap.c",
+               "smg3_setup_rap.c", "smg_axpy.c", "smg_relax.c", "smg_residual.c", "smg_setup.c",
+               "smg_setup_interp.c", "smg_setup_rap.c", "smg_setup_restrict.c", "smg_solve.c",
+               "struct_axpy.c", "struct_copy.c", "struct_grid.c", "struct_innerprod.c", "struct_io.c",
+               "struct_matrix.c", "struct_matrix_mask.c", "struct_matvec.c", "struct_scale.c",
+               "struct_stencil.c", "struct_vector.c", "threading.c", "timer.c", "timing.c"
+  ], 
+  "tags": [
+    "program", 
+    "asci_purple",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
