@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "04ce80f20242b88a", 
+  "backup_module_uid": "b0ac08fe1d3c2615", 
+  "backup_module_uoa": "program", 
+  "control": {
+    "engine": "CK", 
+    "iso_datetime": "2019-06-02T16:16:06.138905", 
+    "version": [
+      "1", 
+      "9", 
+      "6"
+    ]
+  }, 
+  "data_name": "mccat-trie"
+}
