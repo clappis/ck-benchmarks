@@ -1,0 +1,61 @@
+{
+  "backup_data_uid": "1ed5438647c79251", 
+  "build_compiler_vars": {
+    "NOMEMOPT" : 1
+  }, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "mallocbench-cfrac", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ 376529507064485971626234556089714053987", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "cfrac.c", "pops.c", "pconst.c", "pio.c", 
+    "pabs.c", "pneg.c", "pcmp.c", "podd.c", "phalf.c", 
+    "padd.c", "psub.c", "pmul.c", "pdivmod.c", "psqrt.c", "ppowmod.c", 
+    "atop.c", "ptoa.c", "itop.c", "utop.c", "ptou.c", "errorp.c", 
+    "pfloat.c", "pidiv.c", "pimod.c", "picmp.c", 
+    "primes.c", "pcfrac.c", "pgcd.c"
+  ], 
+  "tags": [
+    "program", 
+    "malloc",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
