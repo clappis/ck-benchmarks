@@ -11,8 +11,12 @@ Usage
 
 ck pull repo --url=https://github.com/clappis/ck-benchmarks
 
+After the installation you can see the programs available as follow:
+```
+ck list ck-benchmarks:program:
+```
 
-Now you can compile and run the programs as follow:
+You can compile and run the programs as follow:
 
 ```
 ck compile program:bitbench-drop3
