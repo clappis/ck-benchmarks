@@ -1,0 +1,70 @@
+
+* mallocbench-espresso (49ce5f57cad12b7d)
+
+***************************************************************************************
+Current directory: /home/clappis/CK/ck-benchmarks/program/mallocbench-espresso/tmp
+***************************************************************************************
+
+  -----------------------------------
+  Resolving software dependencies ...
+
+*** Dependency 1 = compiler (C compiler):
+
+    Resolved. CK environment UID = 9ba414baaedb8ca4 (version 4.4.4)
+  -----------------------------------
+***************************************************************************************
+Detected compiler version: 4.4.4
+
+***************************************************************************************
+Compiler vars:
+  CK_HOST_OS_NAME2_LINUX=1
+  CK_HOST_OS_NAME_LINUX=1
+  CK_TARGET_OS_NAME2_LINUX=1
+  CK_TARGET_OS_NAME_LINUX=1
+  NOMEMOPT=
+***************************************************************************************
+
+Executing prepared batch file tmp-g78aVL.sh ...
+
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cofactor.c  -o cofactor.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cols.c  -o cols.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../compl.c  -o compl.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../contain.c  -o contain.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cubestr.c  -o cubestr.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cvrin.c  -o cvrin.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cvrm.c  -o cvrm.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cvrmisc.c  -o cvrmisc.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../cvrout.c  -o cvrout.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../dominate.c  -o dominate.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../equiv.c  -o equiv.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../espresso.c  -o espresso.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../essen.c  -o essen.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../exact.c  -o exact.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../expand.c  -o expand.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../gasp.c  -o gasp.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../getopt.c  -o getopt.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../gimpel.c  -o gimpel.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../globals.c  -o globals.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../hack.c  -o hack.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../indep.c  -o indep.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../irred.c  -o irred.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../main.c  -o main.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../map.c  -o map.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../matrix.c  -o matrix.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../mincov.c  -o mincov.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../opo.c  -o opo.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../pair.c  -o pair.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../part.c  -o part.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../primes.c  -o primes.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../reduce.c  -o reduce.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../rows.c  -o rows.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../set.c  -o set.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../setc.c  -o setc.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../sharp.c  -o sharp.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../sminterf.c  -o sminterf.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../solution.c  -o solution.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../sparse.c  -o sparse.o
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DNOMEMOPT   ../unate.c  -o unate.o
+***************************************************************************************
+Compilation time: 2.278 sec.; Object size: 0; Total binary size: 0; MD5: 
+Warning: compilation failed!
