@@ -1,5 +1,5 @@
 {
-  "backup_data_uid": "49366b8fdcd54a6e", 
+  "backup_data_uid": "67b572946048fde1", 
   "build_compiler_vars": {}, 
   "compile_deps": {
     "compiler": {
@@ -9,7 +9,7 @@
     }
   }, 
   "compiler_env": "CK_CC", 
-  "data_name": "misc-dt", 
+  "data_name": "npb-serial-dc", 
   "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
   "main_language": "c", 
   "print_files_after_run": [
@@ -26,7 +26,7 @@
         "post_process_via_ck": {
           "script_name": "process"
         }, 
-        "run_cmd_main": "$#BIN_FILE#$", 
+        "run_cmd_main": "$#BIN_FILE#$ 10000000 \"$#src_path#$ADC.par\"", 
         "run_cmd_out1": "stdout.log", 
         "run_cmd_out2": "stderr.log", 
         "run_correctness_output_files": [
@@ -43,11 +43,16 @@
   "run_vars": {
   }, 
   "source_files": [
-    "dt.c"
+    "adc.c",
+    "dc.c",
+    "jobcntl.c",
+    "c_print_results.c",
+    "extbuild.c",
+    "rbt.c"
   ], 
   "tags": [
     "program", 
-    "misc",
+    "npb-serial",
     "lang-c"
   ], 
   "target_file": "a"
