@@ -30,13 +30,31 @@ def ck_check_output(i):
     ck=i['ck_kernel']
 
     env=i.get('env',{})
+    text1=None
 
-    r=ck.access({'action':'check_numerical',
-                 'module_uoa':'program.output',
-                 'file1':i['file1'],
-                 'file2':i['file2'],
-                 'abs_threshold':env.get('CK_ABS_DIFF_THRESHOLD','')})
-    return r
+    file1=i.get('file1','')
+    if file1!='':
+       r=ck.load_text_file({'text_file':file1})
+       if r['return']>0: return r
+       text1=r['bin']
+
+    if text1 is None:
+       return {'return':1, 'error':'text1 to compare is empty'}
+
+    text2=None
+    file2=i.get('file2','')
+    if file2!='':
+       r=ck.load_text_file({'text_file':file2})
+       if r['return']>0: return r
+       text2=r['bin']
+
+    if text2 is None:
+       return {'return':1, 'error':'text2 to compare is empty'}
+
+    if text1 <> text2:
+       return {'return':0, 'failed':True, 'fail_reason':'Outputs differ:\n'+err}
+
+    return {'return':0, 'failed':False}
 
 # Do not add anything here!
 
