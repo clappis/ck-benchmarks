@@ -1,0 +1,62 @@
+{
+  "backup_data_uid": "f4f5e9cd2f70f7cd", 
+  "build_compiler_vars": {}, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "prolangs-agrep", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "process_in_tmp": "yes", 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ -2 int \"$#src_path#$InstructionCombining.cpp\"", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "asearch.c",
+    "asearch1.c",
+    "bitap.c",
+    "checkfile.c",
+    "compat.c",
+    "follow.c",
+    "main.c",
+    "maskgen.c",
+    "mgrep.c",
+    "parse.c",
+    "preprocess.c",
+    "sgrep.c",
+    "utilities.c"
+  ], 
+  "tags": [
+    "program", 
+    "prolangs",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
