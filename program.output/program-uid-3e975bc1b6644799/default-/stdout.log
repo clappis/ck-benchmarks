@@ -1,0 +1,215 @@
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: help
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: set options
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test some declarations
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as ptr to character
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(w as ptr to char, y as int) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(ptr to char) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(int) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(ptr to char, int) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as function (args) returning pointer to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test some explain functions
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain char *x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x()
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(args)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(char *)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(char *, int )
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(char *, int, float)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(int )
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test some casts
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to char
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func() ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(args) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(x as ptr to char, y as int) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(ptr to char) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(ptr to char, int) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(ptr to char, int, float) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test explaining some casts
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (char *)x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)())x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)(char *))x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)(char *, int))x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)(char *, int, float))x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: help
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: set options
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test some declarations
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as ptr to character
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as reference to character
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare foo as pointer to member of class X int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare foo as pointer to member of class X function (arg1, arg2) returning pointer to class Y
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(w as ptr to char, y as int) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(ptr to char) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(int) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as func(ptr to char, int) ret ptr to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: declare x as function (args) returning pointer to int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test some explain functions
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain char *x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int X::*foo
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain class Y *(X::*foo)(arg1, arg2)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x()
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(args)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(char *)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(char *, int )
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(char *, int, float)
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain int *x(int )
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test some casts
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to char
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to member of class X int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func() ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(args) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(x as ptr to char, y as int) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(ptr to char) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(ptr to char, int) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: cast x into ptr to func(ptr to char, int, float) ret int
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: # test explaining some casts
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (char *)x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int X::*)x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)())x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)(char *))x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)(char *, int))x
+------------>ERROR: Expected a SPACE between Token Code and
+                    the string following it <--------
+Scanner ERROR: explain (int (*)(char *, int, float))x
+EOF
+****** 71 format errors found in output of your scanner.
