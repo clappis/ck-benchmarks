@@ -1,0 +1,72 @@
+{
+  "backup_data_uid": "d4ccfd154b149e2a", 
+  "build_compiler_vars": {}, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "prolangs-unix-tbl", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "process_in_tmp": "yes", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "yes", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ < ", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "t..c",
+    "t0.c",
+    "t1.c",
+    "t2.c",
+    "t3.c",
+    "t4.c",
+    "t5.c",
+    "t6.c",
+    "t7.c",
+    "t8.c",
+    "t9.c",
+    "tb.c",
+    "tc.c",
+    "te.c",
+    "tf.c",
+    "tg.c",
+    "ti.c",
+    "tm.c",
+    "ts.c",
+    "tt.c",
+    "tu.c",
+    "tv.c"
+  ], 
+  "tags": [
+    "program", 
+    "prolangs",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
