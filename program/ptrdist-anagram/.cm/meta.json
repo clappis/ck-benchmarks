@@ -1,0 +1,58 @@
+{
+  "backup_data_uid": "8da476ed832b408b", 
+  "build_compiler_vars": {
+    "POSIX_SOURCE" : "",
+    "HYPRE_TIMING" : "",
+    "HYPRE_SEQUENTIAL" : ""
+  }, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "ptrdist-anagram", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "process_in_tmp": "yes", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ \"$#src_path#$words\" 2 < \"$#src_path#$input.OUT\"", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "anagram.c"
+  ], 
+  "tags": [
+    "program", 
+    "ptrdist",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
