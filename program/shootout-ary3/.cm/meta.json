@@ -1,5 +1,5 @@
 {
-  "backup_data_uid": "24a40a7a0e197622", 
+  "backup_data_uid": "eb869a0ff7951b1d", 
   "build_compiler_vars": {}, 
   "compile_deps": {
     "compiler": {
@@ -9,7 +9,7 @@
     }
   }, 
   "compiler_env": "CK_CC", 
-  "data_name": "shootout-ackermann", 
+  "data_name": "shootout-ary3", 
   "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
   "main_language": "c", 
   "process_in_tmp": "yes", 
@@ -43,7 +43,7 @@
   "run_vars": {
   }, 
   "source_files": [
-    "ackermann.c"
+    "ary3.c"
   ], 
   "tags": [
     "program", 
