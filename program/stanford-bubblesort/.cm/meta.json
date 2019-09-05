@@ -1,8 +1,6 @@
 {
-  "backup_data_uid": "7d489b54f15302df", 
-  "build_compiler_vars": {
-    "UNIX" : ""
-  }, 
+  "backup_data_uid": "6ba0bfe364259303", 
+  "build_compiler_vars": {}, 
   "compile_deps": {
     "compiler": {
       "local": "yes", 
@@ -11,7 +9,7 @@
     }
   }, 
   "compiler_env": "CK_CC", 
-  "data_name": "sim", 
+  "data_name": "stanford-bubblesort", 
   "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
   "main_language": "c", 
   "process_in_tmp": "yes", 
@@ -28,7 +26,7 @@
         "post_process_via_ck": {
           "script_name": "process"
         }, 
-        "run_cmd_main": "$#BIN_FILE#$ 8 \"$#src_path#$tob.38-44\" \"$#src_path#$liv.42-48\" \"$#src_path#$sim.res\" ", 
+        "run_cmd_main": "$#BIN_FILE#$", 
         "run_cmd_out1": "stdout.log", 
         "run_cmd_out2": "stderr.log", 
         "run_correctness_output_files": [
@@ -45,11 +43,11 @@
   "run_vars": {
   }, 
   "source_files": [
-    "sim.c"
+    "Bubblesort.c"
   ], 
   "tags": [
     "program", 
-    "sim",
+    "stanford",
     "lang-c"
   ], 
   "target_file": "a"
