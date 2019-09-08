@@ -1,5 +1,5 @@
 {
-  "backup_data_uid": "47a5951ad6badb4d", 
+  "backup_data_uid": "a5335d245144e7ab", 
   "build_compiler_vars": {}, 
   "compile_deps": {
     "compiler": {
@@ -9,7 +9,7 @@
     }
   }, 
   "compiler_env": "CK_CC", 
-  "data_name": "tsvc-globaldataflow-dbl", 
+  "data_name": "tsvc-globaldataflow-flt", 
   "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
   "compiler_flags_as_env": "-std=gnu99",
   "main_language": "c", 
@@ -27,7 +27,7 @@
         "post_process_via_ck": {
           "script_name": "process"
         }, 
-        "run_cmd_main": "$#BIN_FILE#$ 3450 14", 
+        "run_cmd_main": "$#BIN_FILE#$ 3450 5 ", 
         "run_cmd_out1": "stdout.log", 
         "run_cmd_out2": "stderr.log", 
         "run_correctness_output_files": [
