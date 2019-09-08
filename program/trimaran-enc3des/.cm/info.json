@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "5814716bcbf25fd5", 
+  "backup_module_uid": "b0ac08fe1d3c2615", 
+  "backup_module_uoa": "program", 
+  "control": {
+    "engine": "CK", 
+    "iso_datetime": "2019-09-08T17:42:48.731116", 
+    "version": [
+      "1", 
+      "9", 
+      "6"
+    ]
+  }, 
+  "data_name": "trimaran-enc3des"
+}
