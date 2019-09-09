@@ -1,0 +1,94 @@
+{
+  "backup_data_uid": "41f580a08e8a6bd6", 
+  "build_compiler_vars": {}, 
+  "compile_deps": {
+    "compiler": {
+      "local": "yes", 
+      "name": "C compiler", 
+      "tags": "compiler,lang-c"
+    }
+  }, 
+  "compiler_env": "CK_CC", 
+  "data_name": "versabench-dbms", 
+  "extra_ld_vars": "$<<CK_EXTRA_LIB_M>>$", 
+  "main_language": "c", 
+  "process_in_tmp": "yes", 
+  "print_files_after_run": [
+    "stderr.log", 
+    "stdout.log"
+  ], 
+  "program": "yes", 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no", 
+      "run_time": {
+        "output_invariant_of_repeat": "yes", 
+        "post_process_via_ck": {
+          "script_name": "process"
+        }, 
+        "run_cmd_main": "$#BIN_FILE#$ -i \"$#src_path#$\"dbms.ref.in", 
+        "run_cmd_out1": "stdout.log", 
+        "run_cmd_out2": "stderr.log", 
+        "run_correctness_output_files": [
+          "stdout.log"
+        ], 
+        "run_output_files": [
+          "tmp-ck-output.json", 
+          "stdout.log", 
+          "stderr.log"
+        ]
+      }
+    }
+  }, 
+  "run_vars": {
+  }, 
+  "source_files": [
+    "calcMetricsData.c",
+    "chooseEntry.c",
+    "clearLine.c",
+    "closeFiles.c",
+    "consistent.c",
+    "createDataObject.c",
+    "createIndexEntry.c",
+    "createIndexNode.c",
+    "delete.c",
+    "deleteDataObject.c",
+    "deleteEntry.c",
+    "deleteIndexEntry.c",
+    "deleteIndexNode.c",
+    "errorMessage.c",
+    "getDeleteCommand.c",
+    "getFloat.c",
+    "getInitCommand.c",
+    "getInsertCommand.c",
+    "getInt.c",
+    "getKeyAttribute.c",
+    "getNextCommandCode.c",
+    "getNonKeyAttribute.c",
+    "getQueryCommand.c",
+    "getString.c",
+    "initMetricsData.c",
+    "insert.c",
+    "insertEntry.c",
+    "keyUnion.c",
+    "main.c",
+    "openFiles.c",
+    "outputMetricsData.c",
+    "outputQuery.c",
+    "partitionEntries.c",
+    "penalty.c",
+    "query.c",
+    "setMetricsData.c",
+    "splitNode.c",
+    "timer.c",
+    "updateMetricsData.c",
+    "valid.c",
+    "volume.c"
+  ], 
+  "tags": [
+    "program", 
+    "versabench",
+    "lang-c"
+  ], 
+  "target_file": "a"
+}
