@@ -29,9 +29,6 @@
         "run_cmd_main": "$#BIN_FILE#$ < \"$#src_path#$testset\"", 
         "run_cmd_out1": "stdout.log", 
         "run_cmd_out2": "stderr.log", 
-        "run_correctness_output_files": [
-          "stdout.log"
-        ], 
         "run_output_files": [
           "tmp-ck-output.json", 
           "stdout.log", 
